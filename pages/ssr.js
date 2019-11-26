@@ -1,6 +1,8 @@
 import React from 'react'
 import Head from 'next/head'
 import Nav from '../components/nav'
+import data from '../data/pages'
+import FacetBar from '../components/facetbar'
 
 
 const ssr = () => (
@@ -11,6 +13,8 @@ const ssr = () => (
     </Head>
 
     <Nav />
+
+    <FacetBar parent='ssr'  linkData={data.ssr} />
 
     <div class="hero">
         <h1>SSR page!</h1>

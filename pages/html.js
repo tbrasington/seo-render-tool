@@ -15,7 +15,7 @@ const html = () => (
 
     <Nav />
 
-    <FacetBar linkData={data.html} />
+    <FacetBar parent='html' linkData={data.html} />
 
     <div className="hero">
         <h1>html page!</h1>
