@@ -1,7 +1,7 @@
-import React from 'react'
-import Head from 'next/head'
-import Nav from '../components/nav'
-
+import React from "react";
+import Head from "next/head";
+import Nav from "../components/nav";
+import FacetBar from '../components/facetbar'
 
 const Home = () => (
   <div>
@@ -17,7 +17,9 @@ const Home = () => (
       <p className="description">
         To get started, edit <code>pages/index.js</code> and save to reload.
       </p>
-
+      
+      <FacetBar />
+      
       <div className="row">
         <a href="https://nextjs.org/docs" className="card">
           <h3>Documentation &rarr;</h3>
@@ -36,8 +38,7 @@ const Home = () => (
         </a>
       </div>
     </div>
-
   </div>
-)
+);
 
-export default Home
+export default Home;

@@ -1,8 +1,8 @@
 import React from 'react'
 import Head from 'next/head'
 import Nav from '../components/nav'
-
-
+import data from '../data/pages'
+console.log(data)
 const html = () => (
   <div>
     <Head>
@@ -12,11 +12,11 @@ const html = () => (
 
     <Nav />
 
-    <div class="hero">
+    <div className="hero">
         <h1>html page!</h1>
     </div>
 
-    <div class="row">
+    <div className="row">
         <p>here is some content</p>
     </div>
 </div>
