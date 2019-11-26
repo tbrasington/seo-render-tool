@@ -1,11 +1,21 @@
 import React from "react";
-import Link from 'next/link'
+import Link from "next/link";
 import "../style.css";
- 
 
-const FacetBar = () => {
-    return (<div className="facet-bar"></div>)
-}
+const FacetBar = ({ linkData }) => {
+  console.log(linkData);
+  return (
+    <div className="facet-bar">
+      {linkData.map((item, key) => {
+        return (
+          <Link key={key} href={`content/${item.url}`}>
+            <a>{item.title}</a>
+          </Link>
+        );
+      })}
+    </div>
+  );
+};
 // const FacetBar = () => (
 //   <div class='facet-bar'>
 //     <a href="facet/link1">Link 1</a>

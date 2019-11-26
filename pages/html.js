@@ -2,7 +2,10 @@ import React from 'react'
 import Head from 'next/head'
 import Nav from '../components/nav'
 import data from '../data/pages'
-console.log(data)
+import FacetBar from '../components/facetbar'
+
+//console.log(data)
+
 const html = () => (
   <div>
     <Head>
@@ -11,6 +14,8 @@ const html = () => (
     </Head>
 
     <Nav />
+
+    <FacetBar linkData={data.html} />
 
     <div className="hero">
         <h1>html page!</h1>
